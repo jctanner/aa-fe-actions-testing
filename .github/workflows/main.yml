@@ -30,3 +30,8 @@ jobs:
           docker --version
           which docker-compose
           docker-compose --version
+          pwd
+          ls -al
+          
+      - name: clone the aa-hacking repo
+        run: git clone https://github.com/jctanner/aa-hacking
