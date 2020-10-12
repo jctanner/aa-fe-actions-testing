@@ -38,6 +38,7 @@ jobs:
       
       - name: make the venv
         run: |
+          pip3 install --user virtualenv
           python3 -m virtualenv --python=$(which python3) venv
           source venv/bin/activate
           pip install -r requirements.txt
