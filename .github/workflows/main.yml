@@ -35,3 +35,10 @@ jobs:
           
       - name: clone the aa-hacking repo
         run: git clone https://github.com/jctanner/aa-hacking
+      
+      - name: make the venv
+        run: |
+          virtualenv --python=$(which python3) venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+        working-directory: ./aa-hacking
