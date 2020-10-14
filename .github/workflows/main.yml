@@ -56,6 +56,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: screens
-          path: srv/integration_tests/screens
+          path: ./aa-hacking/srv/integration_tests/screens
           retention-days: 5
         if: always()
