@@ -52,7 +52,7 @@ jobs:
           make stack_ci
         working-directory: ./aa-hacking
         
-      - name: save the screenshots
+      - name: save the screenshots 
         uses: actions/upload-artifact@v2
         with:
           name: screens
