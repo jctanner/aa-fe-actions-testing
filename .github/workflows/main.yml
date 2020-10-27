@@ -63,7 +63,7 @@ jobs:
       - name: save the video 
         uses: actions/upload-artifact@v2
         with:
-          name: screens
+          name: video
           path: ./aa-hacking/srv/integration_tests/cypress/videos
           retention-days: 5
         if: always()
